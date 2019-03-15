@@ -1,0 +1,16 @@
+adf:			4.6.13
+adf.service:	2.0.2	
+
+
+
+C:\develop\bin\adf4\net20\4.6.13\Adf.dll
+C:\develop\bin\adf.service\20\2.0.2\Adf.Service.dll
+
+
+C:\develop\bin\adf4\net35\4.6.13\Adf.dll
+C:\develop\bin\adf.service\net35\2.0.2\Adf.Service.dll
+
+C:\develop\bin\adf4\net40\4.6.13\Adf.dll
+C:\develop\bin\adf.service\net40\2.0.2\Adf.Service.dll
+
+

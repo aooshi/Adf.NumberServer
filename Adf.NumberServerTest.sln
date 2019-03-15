@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberServerTest", "NumberServerTest\NumberServerTest.csproj", "{8B70594D-A5A9-4342-B894-84D0491DCDEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberServerPerformanceTest", "NumberServerPerformanceTest\NumberServerPerformanceTest.csproj", "{B1AF139F-F23F-4A8E-9B7E-371B99D09712}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B70594D-A5A9-4342-B894-84D0491DCDEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B70594D-A5A9-4342-B894-84D0491DCDEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B70594D-A5A9-4342-B894-84D0491DCDEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B70594D-A5A9-4342-B894-84D0491DCDEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1AF139F-F23F-4A8E-9B7E-371B99D09712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1AF139F-F23F-4A8E-9B7E-371B99D09712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1AF139F-F23F-4A8E-9B7E-371B99D09712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1AF139F-F23F-4A8E-9B7E-371B99D09712}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E77273A-D98A-4818-8805-6970237875F2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adf.NumberServer</RootNamespace>
+    <AssemblyName>Adf.NumberServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>C:\develop\bin\adf.numberserver\net40\2.0.0\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adf">
+      <HintPath>C:\develop\bin\adf4\net40\4.6.13\Adf.dll</HintPath>
+    </Reference>
+    <Reference Include="Adf.Service">
+      <HintPath>C:\develop\bin\adf.service\40\2.0.2\Adf.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Adf.NumberServer\ToolInstallService.bat">
+      <Link>ToolInstallService.bat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Adf.NumberServer\ToolRunConsole.bat">
+      <Link>ToolRunConsole.bat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Adf.NumberServer\ToolUninstallService.bat">
+      <Link>ToolUninstallService.bat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Adf.NumberServer\BlockAction.cs">
+      <Link>BlockAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\BlockData.cs">
+      <Link>BlockData.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\BlockFlag.cs">
+      <Link>BlockFlag.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\DataFileException.cs">
+      <Link>DataFileException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\DataItem.cs">
+      <Link>DataItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\DataManager.cs">
+      <Link>DataManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\HashHelper.cs">
+      <Link>HashHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\JournalManager.cs">
+      <Link>JournalManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\JournalPacket.cs">
+      <Link>JournalPacket.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\Listen.cs">
+      <Link>Listen.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\MemcachedSession.cs">
+      <Link>MemcachedSession.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\NumberManager.cs">
+      <Link>NumberManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\ReplicationClient.cs">
+      <Link>ReplicationClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.NumberServer\SessionDataItem.cs">
+      <Link>SessionDataItem.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Adf.NumberServer\readme.txt">
+      <Link>readme.txt</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
