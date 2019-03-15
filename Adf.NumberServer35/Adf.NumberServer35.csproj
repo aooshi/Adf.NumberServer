@@ -24,7 +24,7 @@
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <OutputPath>C:\develop\bin\adf.numberserver\net35\2.0.0\</OutputPath>
+    <OutputPath>C:\develop\bin\adf.numberserver\2.0.0\net35\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
@@ -33,13 +33,16 @@
     <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
     <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <DocumentationFile>C:\develop\bin\adf.numberserver\2.0.0\net35\Adf.NumberServer.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Adf">
-      <HintPath>C:\develop\bin\adf4\net35\4.6.13\Adf.dll</HintPath>
+    <Reference Include="Adf, Version=4.6.13.32022, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\adf\4.6.13\net35\Adf.dll</HintPath>
     </Reference>
-    <Reference Include="Adf.Service">
-      <HintPath>C:\develop\bin\adf.service\35\2.0.2\Adf.Service.dll</HintPath>
+    <Reference Include="Adf.Service, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\adf.service\2.0.2\net35\Adf.Service.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

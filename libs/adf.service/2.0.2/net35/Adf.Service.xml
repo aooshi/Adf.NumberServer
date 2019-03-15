@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Adf.Service</name>
+    </assembly>
+    <members>
+        <member name="E:Adf.Service.HAClient.ToMaster">
+            <summary>
+            state change to master
+            </summary>
+        </member>
+        <member name="E:Adf.Service.HAClient.ToSlave">
+            <summary>
+            state change to slave
+            </summary>
+        </member>
+        <member name="E:Adf.Service.HAClient.ToWitness">
+            <summary>
+            state change to witness
+            </summary>
+        </member>
+        <member name="E:Adf.Service.HAClient.ToRestore">
+            <summary>
+            state change to restore
+            </summary>
+        </member>
+        <member name="T:Adf.Service.ServiceException">
+            <summary>
+            Service Exception
+            </summary>
+        </member>
+        <member name="M:Adf.Service.ServiceException.#ctor(System.String)">
+            <summary>
+            initialize new instance
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:Adf.Service.ServiceChange">
+            <summary>
+            service state change
+            </summary>
+            <param name="sc"></param>
+            <param name="state"></param>
+        </member>
+        <member name="F:Adf.Service.Service.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Adf.Service.Service.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="T:Adf.Service.IHttpService">
+            <summary>
+            IService
+            </summary>
+        </member>
+        <member name="M:Adf.Service.IHttpService.HttpProcess(Adf.HttpServerContext)">
+            <summary>
+            http process function
+            </summary>
+            <param name="httpContext"></param>
+        </member>
+        <member name="T:Adf.Service.ServiceState">
+            <summary>
+            service state
+            </summary>
+        </member>
+        <member name="F:Adf.Service.ServiceState.Initialize">
+            <summary>
+            Running 
+            </summary>
+        </member>
+        <member name="F:Adf.Service.ServiceState.Running">
+            <summary>
+            Running
+            </summary>
+        </member>
+        <member name="F:Adf.Service.ServiceState.Master">
+            <summary>
+            Master
+            </summary>
+        </member>
+        <member name="F:Adf.Service.ServiceState.Slave">
+            <summary>
+            Slave
+            </summary>
+        </member>
+        <member name="F:Adf.Service.ServiceState.Witness">
+            <summary>
+            Witness
+            </summary>
+        </member>
+        <member name="F:Adf.Service.ServiceState.Restore">
+            <summary>
+            restore
+            </summary>
+        </member>
+        <member name="F:Adf.Service.ServiceState.Stoped">
+            <summary>
+            Stoped
+            </summary>
+        </member>
+        <member name="T:Adf.Service.ServiceContext">
+            <summary>
+            Service Context
+            </summary>
+        </member>
+        <member name="M:Adf.Service.ServiceContext.#ctor(System.String,System.Boolean)">
+            <summary>
+            context
+            </summary>
+            <param name="isConsole"></param>
+            <param name="serverName"></param>
+        </member>
+        <member name="M:Adf.Service.ServiceContext.ChangeToMaster(System.Object,System.EventArgs)">
+            <summary>
+            change status to master
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Adf.Service.ServiceContext.ChangeToSlave(System.Object,System.EventArgs)">
+            <summary>
+            change status to slave
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Adf.Service.ServiceContext.ChangeToRestore(System.Object,System.EventArgs)">
+            <summary>
+            change status to restore
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Adf.Service.ServiceContext.ChangeToWitness(System.Object,System.EventArgs)">
+            <summary>
+            change status to witness
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Adf.Service.ServiceContext.GetMaster">
+            <summary>
+            get master host
+            </summary>
+            <returns>if no enable ha return null</returns>
+        </member>
+        <member name="E:Adf.Service.ServiceContext.ToMaster">
+            <summary>
+            state change to master
+            </summary>
+        </member>
+        <member name="E:Adf.Service.ServiceContext.ToSlave">
+            <summary>
+            state change to slave
+            </summary>
+        </member>
+        <member name="E:Adf.Service.ServiceContext.ToWitness">
+            <summary>
+            state change to witness
+            </summary>
+        </member>
+        <member name="E:Adf.Service.ServiceContext.ToRestore">
+            <summary>
+            state change to restore
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.UserState">
+            <summary>
+            get or set user-defined state value
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.StartArgs">
+            <summary>
+            get service start args
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.StartTime">
+            <summary>
+            get service start time
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.Service">
+            <summary>
+            Service
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.IsConsole">
+            <summary>
+            get a value indicates whether to console mode
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.LogManager">
+            <summary>
+            get log manager
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.HttpServer">
+            <summary>
+            get http server object
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.ServiceName">
+            <summary>
+            get service name
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.ServiceState">
+            <summary>
+            get service running state
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.MailRecipients">
+            <summary>
+            Mail Recipient List, AppSetting["MailRecipients"]
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.Smtp">
+            <summary>
+            get default smtp object
+            </summary>
+        </member>
+        <member name="P:Adf.Service.ServiceContext.HAEnable">
+            <summary>
+            is enable master/slave mode
+            </summary>
+        </member>
+        <member name="T:Adf.Service.IService">
+            <summary>
+            IService
+            </summary>
+        </member>
+        <member name="M:Adf.Service.IService.Start(Adf.Service.ServiceContext)">
+            <summary>
+            service start
+            </summary>
+            <param name="serviceContext"></param>
+        </member>
+        <member name="M:Adf.Service.IService.Stop(Adf.Service.ServiceContext)">
+            <summary>
+            service stop
+            </summary>
+            <param name="serviceContext"></param>
+        </member>
+        <member name="M:Adf.Service.HAContext.LoadMasterKey(Adf.LogManager)">
+            <summary>
+            read master key from file
+            </summary>
+            <param name="logManager"></param>
+        </member>
+        <member name="M:Adf.Service.HAContext.SaveMasterKey(System.String)">
+            <summary>
+            save master key to file
+            </summary>
+            <param name="masterKey"></param>
+        </member>
+        <member name="M:Adf.Service.HAContext.Elect(System.Int32)">
+            <summary>
+            选举,返回选举出的编号， 未选中返回 零
+            </summary>
+            <param name="disableNum">禁止选中的编号(非master)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adf.Service.HAContext.GetMasterNum">
+            <summary>
+            获取MASTER节点序号，无MASTER返回 0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Adf.Service.ServiceHelper">
+            <summary>
+            service helper
+            </summary>
+        </member>
+        <member name="M:Adf.Service.ServiceHelper.Entry(System.String[])">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+            <param name="args"></param>
+        </member>
+    </members>
+</doc>

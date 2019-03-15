@@ -1,0 +1,18 @@
+2.0
+	Remove:		ServiceSetting.Instance
+	Remove:		Installer
+	Remove:		ServiceStatus
+	Remove:		ServiceSetting
+	Remove:		Monitor Module
+	Remove:		Authorization module
+	Rebuild:	IService
+	Rebuild:	ServiceContext
+	Edit:		Installer mode
+	Rebuild:	Project Rebuild
+	Import:		Adf.dll 4.6 +
+
+1.2
+	Add:	Authorization module
+	Remove:	MailSender.Context
+	Opt:	Context.Init
+	Add:	Registry module

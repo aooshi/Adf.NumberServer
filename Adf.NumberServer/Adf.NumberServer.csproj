@@ -29,7 +29,7 @@
     <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <OutputPath>C:\develop\bin\adf.numberserver\net20\2.0.0\</OutputPath>
+    <OutputPath>C:\develop\bin\adf.numberserver\2.0.0\net20\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
@@ -41,15 +41,16 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
     <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <DocumentationFile>C:\develop\bin\adf.numberserver\2.0.0\net20\\Adf.NumberServer.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Adf, Version=4.6.13.32550, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Adf, Version=4.6.13.32024, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\develop\bin\adf4\net20\4.6.13\Adf.dll</HintPath>
+      <HintPath>..\libs\adf\4.6.13\net20\Adf.dll</HintPath>
     </Reference>
     <Reference Include="Adf.Service, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\develop\bin\adf.service\20\2.0.2\Adf.Service.dll</HintPath>
+      <HintPath>..\libs\adf.service\2.0.2\net20\Adf.Service.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
